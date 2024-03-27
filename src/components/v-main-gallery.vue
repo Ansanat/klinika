@@ -48,42 +48,43 @@
 </script>
 
 <style>
-.route-button{
-    position: absolute;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%,-50%);
+.route-button {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%,-50%);
 }
-.card-gallery{
-    width: 100%;
-    aspect-ratio: 16 / 7;
-    object-fit: cover;
+
+.card-gallery {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
 }
 .swiper-pagination-bullet, .swiper-pagination-bullet-active {
-    background-color: #121820;
-    width: 13px;
-    height:13px;
+  background-color: #121820;
+  width: 13px;
+  height:13px;
 }
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
-    color: #121820;
+  color: #121820;
 }
-.swiper-button-next:hover{
-    color: white;
-    opacity:0.4;
+.swiper-button-next:hover {
+  color: white;
+  opacity:0.4;
 }
 
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after {
-    color: #121820;
+  color: #121820;
 }
-.swiper-button-prev:hover{
-    color: white;
-    opacity:0.4;
+.swiper-button-prev:hover {
+  color: white;
+  opacity:0.4;
 }
 
 @media screen and (max-width: 700px) {
-    .card-gallery{
-        aspect-ratio: 3 / 3;
-        object-fit: cover;
-    }
+  .card-gallery {
+    aspect-ratio: 3 / 3;
+    object-fit: cover;
+  }
 }
 </style>
