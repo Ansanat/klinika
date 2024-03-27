@@ -2,7 +2,8 @@
     <div class="v-services">
         <div class="services-zag">Услуги и направления</div>
         <div class="service-buttons">
-            <router-link 
+            <router-link
+                style="margin-right: 10px;"
                 v-for="service in services" :key="service"
                 class="service-button"
                 :to="{path: service.route}"
@@ -22,68 +23,68 @@ export default {
     return {
         services: [
             {
-            name: 'Гастроэнтеролог', 
-            route: '/service-page/gastr'
+                name: 'Гастроэнтеролог', 
+                route: '/service-page/gastr'
             },
             {
-            name: 'Гинеколог', 
-            route: '/service-page/ginecolog'
+                name: 'Гинеколог', 
+                route: '/service-page/ginecolog'
             },
             {
-            name: 'Кардиолог', 
-            route: '/service-page/cardiolog'
+                name: 'Кардиолог', 
+                route: '/service-page/cardiolog'
             },
             {
-            name: 'ЛОР', 
-            route: '/service-page/lor'
+                name: 'ЛОР', 
+                route: '/service-page/lor'
             },
             {
-            name: 'Невролог', 
-            route: '/service-page/nevrolog'
+                name: 'Невролог', 
+                route: '/service-page/nevrolog'
             },
             {
-            name: 'Онколог', 
-            route: '/service-page/onkolog'
+                name: 'Онколог', 
+                route: '/service-page/onkolog'
             },
             {
-            name: 'Офтальмолог', 
-            route: '/service-page/oftalmolog'
+                name: 'Офтальмолог', 
+                route: '/service-page/oftalmolog'
             },
             {
-            name: 'Терапевт', 
-            route: '/service-page/terapevt'
+                name: 'Терапевт', 
+                route: '/service-page/terapevt'
             },
             {
-            name: 'Уролог',
-            route: '/service-page/urolog'
+                name: 'Уролог',
+                route: '/service-page/urolog'
             },
             {
-            name: 'Хирург', 
-            route: '/service-page/hirurg'
+                name: 'Хирург', 
+                route: '/service-page/hirurg'
             },
             {
-            name: 'Эндокринолог', 
-            route: '/service-page/endocrinolog'
+                name: 'Эндокринолог', 
+                route: '/service-page/endocrinolog'
             },
             {
-            name: 'Медицинские комиссии', 
-            route: '/service-page/medcom'
+                name: 'Медицинские комиссии', 
+                route: '/service-page/medcom'
             },
             {
-            name: 'Процедурный кабинет', 
-            route: '/service-page/procedures'
+                name: 'Процедурный кабинет', 
+                route: '/service-page/procedures'
             },
             {
-            name: 'Рентген', 
-            route: '/service-page/rentgen'
+                name: 'Рентген', 
+                route: '/service-page/rentgen'
             },
             {
-            name: 'УЗИ', 
-            route: '/service-page/gastr'
+                name: 'УЗИ', 
+                route: '/service-page/gastr'
             },
             {
-            name: 'Анализы', 
-            route: '/service-page/gastr'
+                name: 'Анализы', 
+                route: '/service-page/gastr'
             },
         ]
     }
@@ -95,18 +96,17 @@ export default {
 
 .v-services{
     width: 85%;
-    height: 500px;
     margin: auto;
     margin-top: 80px;
 }
 
 .service-buttons {
-    width: 70%;
+    width: 100%;
     margin-top: 20px;
 }
 
 .service-button {
-    display: inline;
+    display: inline-block;
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -128,13 +128,16 @@ export default {
 }
 
 .services-zag {
+    width: 100%;
     font-size: 50px;
     color: #358c21;
     font-weight: bold;
 }
 
 @media screen and (max-width: 700px) {
-
+.services-zag {
+    font-size: 34px;
+}
 }
 @media screen and (min-width: 701px) and  (max-width: 1100px){
 
