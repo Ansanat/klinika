@@ -3,8 +3,9 @@ import App from './App.vue'
 import Contacts from '@/pages/v-contacts-page'
 import Main from '@/pages/v-main-page'
 import Specialists from '@/pages/v-specialists-page'
-
 import Service from '@/pages/v-service-page'
+import AboutPage from '@/pages/v-about-page'
+
 import Gastr from '@/pages/service-pages/v-gastr'
 import Ginecolog from '@/pages/service-pages/v-ginecolog'
 import Cardiolog from '@/pages/service-pages/v-cardiolog'
@@ -122,6 +123,11 @@ const router = createRouter ({
             path: '/specialists-page',
             component: Specialists,
             name: 'Specialists'
+        },
+        {
+            path: '/about-page',
+            component: AboutPage,
+            name: 'AboutPage'
         }
     ],
     history: createWebHistory()

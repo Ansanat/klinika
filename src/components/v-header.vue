@@ -18,7 +18,11 @@
             Специалисты
           </div>
         </router-link>
-        <div class="nav-item">О клинике</div>
+        <router-link :to="{ name: 'AboutPage', hash: '#head'}">
+          <div class="nav-item">
+            О клинике
+          </div>
+        </router-link>
         <router-link :to="{ name: 'Contacts', hash: '#head'}">
           <div class="nav-item">
             Контакты
