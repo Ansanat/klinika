@@ -1,5 +1,6 @@
 <template>
   <div class="v-header">
+    <img src="../images/icons/menu.png" class="mobile-menu">
     <router-link to="/"><img src="@/images/logo.png" class="logo"></router-link>
     <div class="nav-bar">
         <router-link :to="{ name: 'Main', hash: '#head'}">
@@ -36,40 +37,59 @@ export default {
 </script>
 
 <style>
-.v-header{
+.v-header {
   height: 80px;
   background-color: #b9ecad;
 }
+
 .logo {
   cursor: pointer;
   height: 50px;
   margin-left: 80px;
   margin-top: 15px;
 }
-.nav-bar{
+
+.nav-bar {
   height: 50px;
   width: 70%;
   vertical-align: middle;
   text-align: center;
   display: inline-block;
 }
-.nav-item{
+
+.nav-item {
   font-weight: 100;
   cursor: pointer;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
   text-align: center;
   display: inline-block;
   color: black;
   text-decoration: none;
 }
-.nav-item:hover{
+
+.nav-item:hover {
   color: #358c21;
+}
+
+.mobile-menu {
+  display: none;
+  width: 50px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
   .nav-bar{
     display: none;
+  }
+
+  .logo {
+    margin-left: 50px;
+  }
+
+  .mobile-menu {
+    display: inline-block;
   }
 }
 @media screen and (min-width: 701px) and  (max-width: 1100px){
