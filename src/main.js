@@ -20,6 +20,7 @@ import Endocrinolog from '@/pages/service-pages/v-endocrinolog'
 import Medcom from '@/pages/service-pages/v-medcom'
 import Procedures from '@/pages/service-pages/v-procedures'
 import Rentgen from '@/pages/service-pages/v-rentgen'
+import USI from '@/pages/service-pages/v-usi'
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -113,6 +114,11 @@ const router = createRouter ({
             path: '/service-page/rentgen',
             component: Rentgen,
             name: 'Rentgen'
+        },
+        {
+            path: '/service-page/usi',
+            component: USI,
+            name: 'USI'
         },
         {
             path: '/contacts-page',

@@ -110,9 +110,9 @@ export default {
         },
         {
           name: 'УЗИ', 
-          desc: 'Прайс на услуги УЗИ-кабинета', 
+          desc: 'Подготовка к УЗИ и прайс на услуги УЗИ-кабинета', 
           src: 'service.jpg',
-          route: 'Gastr'
+          route: 'USI'
         },
         {
           name: 'Анализы', 
