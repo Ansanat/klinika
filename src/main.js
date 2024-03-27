@@ -41,73 +41,87 @@ const router = createRouter ({
         {
             path: '/service-page',
             component: Service,
-            name: Service
+            name: 'Service'
         },
         {
             path: '/service-page/gastr',
             component: Gastr,
-            name: Gastr
+            name: 'Gastr'
         },
         {
             path: '/service-page/ginecolog',
             component: Ginecolog,
-            name: Ginecolog
+            name: 'Ginecolog'
         },
         {
             path: '/service-page/cardiolog',
-            component: Cardiolog
+            component: Cardiolog,
+            name: 'Cardiolog'
         },
         {
             path: '/service-page/lor',
-            component: LOR
+            component: LOR,
+            name: 'LOR'
         },
         {
             path: '/service-page/nevrolog',
-            component: Nevrolog
+            component: Nevrolog,
+            name: 'Nevrolog'
         },
         {
             path: '/service-page/onkolog',
-            component: Onkolog
+            component: Onkolog,
+            name: 'Onkolog'
         },
         {
             path: '/service-page/oftalmolog',
-            component: Oftalmolog
+            component: Oftalmolog,
+            name: 'Oftalmolog'
         },
         {
             path: '/service-page/terapevt',
-            component: Terapevt
+            component: Terapevt,
+            name: 'Terapevt'
         },
         {
             path: '/service-page/urolog',
-            component: Urolog
+            component: Urolog,
+            name: 'Urolog'
         },
         {
             path: '/service-page/hirurg',
-            component: Hirurg
+            component: Hirurg,
+            name: 'Hirurg'
         },
         {
             path: '/service-page/endocrinolog',
-            component: Endocrinolog
+            component: Endocrinolog,
+            name: 'Endocrinolog'
         },
         {
             path: '/service-page/medcom',
-            component: Medcom
+            component: Medcom,
+            name: 'Medcom'
         },
         {
             path: '/service-page/procedures',
-            component: Procedures
+            component: Procedures,
+            name: 'Procedures'
         },
         {
             path: '/service-page/rentgen',
-            component: Rentgen
+            component: Rentgen,
+            name: 'Rentgen'
         },
         {
             path: '/contacts-page',
-            component: Contacts
+            component: Contacts,
+            name: 'Contacts'
         },
         {
             path: '/specialists-page',
-            component: Specialists
+            component: Specialists,
+            name: 'Specialists'
         }
     ],
     history: createWebHistory()

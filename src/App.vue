@@ -1,6 +1,6 @@
 <template>
 <div class="klinika-app">
-  <Header class="header" id="main"/>
+  <Header id="head"/>
   <router-view />
   <Footer/>
 </div>
@@ -23,8 +23,5 @@ export default {
 .klinika-app {
   background-color: #f2fcf0;
   font-family: sans-serif;
-}
-.header {
-  top: 0;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="v-service-page">
     <div v-for="service in services" :key="service" style="display: inline-block;">
-      <router-link :to="{path: service.route}">
+      <router-link :to="{ name: service.route, hash: '#head'}">
         <Card
           :img="service.src"
           :desc="service.desc"
@@ -28,97 +28,97 @@ export default {
           name: 'Гастроэнтеролог', 
           desc: 'Врач-гастроэнтеролог поможет вовремя распознать начало течения болезни, даст рекомендации для быстрого снятия неприятных симптомов и подберет индивидуальную схему лечения.', 
           src: 'service.jpg',
-          route: '/service-page/gastr'
+          route: 'Gastr'
         },
         {
           name: 'Гинеколог', 
           desc: 'Врач-акушер-гинеколог – специалист с высшим медицинским образованием, который занимается наблюдением состояния репродуктивной системы женщины, лечением возможных заболеваний и профилактикой осложнений.', 
           src: 'service.jpg',
-          route: '/service-page/ginecolog'
+          route: 'Ginecolog'
         },
         {
           name: 'Кардиолог', 
           desc: 'Кардиолог - врач, специализирующийся на диагностике, лечении и профилактике сердечно-сосудистых заболеваний.', 
           src: 'service.jpg',
-          route: '/service-page/cardiolog'
+          route: 'Cardiolog'
         },
         {
           name: 'ЛОР', 
           desc: 'ЛОР-врач (оториноларинголог) – это узкопрофильный специалист, занимающийся профилактикой, диагностикой и лечением патологии органов слуха, обоняния, глотки, гортани и трахеи («ухо/горло/нос»), а также прилегающих к ним областей.', 
           src: 'service.jpg',
-          route: '/service-page/lor'
+          route: 'LOR'
         },
         {
           name: 'Невролог', 
           desc: 'Врач-невролог (невропатолог) – специалист с высшим медицинским образованием, в компетенцию которого входит диагностика, лечение и профилактика болезней, связанных с нервной системой. Это центральная и периферическая нервная системы.', 
           src: 'service.jpg',
-          route: '/service-page/nevrolog'
+          route: 'Nevrolog'
         },
         {
           name: 'Онколог', 
           desc: 'Врач-онколог занимается диагностикой, лечением опухолей, а также изучением преобразования доброкачественных опухолей в злокачественные.', 
           src: 'service.jpg',
-          route: '/service-page/onkolog'
+          route: 'Onkolog'
         },
         {
           name: 'Офтальмолог', 
           desc: 'Врач-офтальмолог – специалист с высшим медицинским образованием, который специализируется на диагностике, лечении и профилактике глазных заболеваний.', 
           src: 'service.jpg',
-          route: '/service-page/oftalmolog'
+          route: 'Oftalmolog'
         },
         {
           name: 'Терапевт', 
           desc: 'Терапевты являются первым звеном, способным помочь решить любые проблемы со здоровьем: назначить диагностику и лечение, направить к узким специалистам, помочь с госпитализацией.', 
           src: 'service.jpg',
-          route: '/service-page/terapevt'
+          route: 'Terapevt'
         },
         {
           name: 'Уролог', 
           desc: 'Это специалист, занимающийся диагностикой и лечением заболеваний органов мочевыделительной системы у женщин и мужчин, а также коррекцией нарушений мужской половой сферы.', 
           src: 'service.jpg',
-          route: '/service-page/urolog'
+          route: 'Urolog'
         },
         {
           name: 'Хирург', 
           desc: 'В медицинской практике существует категория заболеваний, при которых наиболее эффективными являются хирургические методы лечения, данные вопросы находятся в компетенции врача — хирурга.', 
           src: 'service.jpg',
-          route: '/service-page/hirurg'
+          route: 'Hirurg'
         },
         {
           name: 'Эндокринолог', 
           desc: 'Нарушение работы щитовидной железы и нарушение обмена углеводов — самые известные проблемы, с которыми обращаются к врачу-эндокринологу.', 
           src: 'service.jpg',
-          route: '/service-page/endocrinolog'
+          route: 'Endocrinolog'
         },
         {
           name: 'Медицинские комиссии', 
           desc: 'Все виды медицинских комиссий, которые вы можете пройти в Клинике Здоровья', 
           src: 'service.jpg',
-          route: '/service-page/medcom'
+          route: 'Medcom'
         },
         {
           name: 'Процедурный кабинет', 
           desc: 'Услуги, оказываемые в процедурном кабинете', 
           src: 'service.jpg',
-          route: '/service-page/procedures'
+          route: 'Procedures'
         },
         {
           name: 'Рентген', 
           desc: 'Прайс-лист Рентгенологического кабинета', 
           src: 'service.jpg',
-          route: '/service-page/rentgen'
+          route: 'Rentgen'
         },
         {
           name: 'УЗИ', 
           desc: 'Прайс на услуги УЗИ-кабинета', 
           src: 'service.jpg',
-          route: '/service-page/gastr'
+          route: 'Gastr'
         },
         {
           name: 'Анализы', 
           desc: 'Прайс на анализы', 
           src: 'service.jpg',
-          route: '/service-page/gastr'
+          route: 'Gastr'
         },
       ]
     }

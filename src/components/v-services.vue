@@ -3,10 +3,10 @@
         <div class="services-zag">Услуги и направления</div>
         <div class="service-buttons">
             <router-link
-                style="margin-right: 10px;"
                 v-for="service in services" :key="service"
                 class="service-button"
-                :to="{path: service.route}"
+                style="margin-right: 10px;"
+                :to="{ name: service.route, hash: '#head'}"
             >
                 {{ service.name }}
             </router-link>
@@ -24,67 +24,67 @@ export default {
         services: [
             {
                 name: 'Гастроэнтеролог', 
-                route: '/service-page/gastr'
+                route: 'Gastr'
             },
             {
                 name: 'Гинеколог', 
-                route: '/service-page/ginecolog'
+                route: 'Ginecolog'
             },
             {
                 name: 'Кардиолог', 
-                route: '/service-page/cardiolog'
+                route: 'Cardiolog'
             },
             {
                 name: 'ЛОР', 
-                route: '/service-page/lor'
+                route: 'LOR'
             },
             {
                 name: 'Невролог', 
-                route: '/service-page/nevrolog'
+                route: 'Nevrolog'
             },
             {
                 name: 'Онколог', 
-                route: '/service-page/onkolog'
+                route: 'Onkolog'
             },
             {
                 name: 'Офтальмолог', 
-                route: '/service-page/oftalmolog'
+                route: 'Oftalmolog'
             },
             {
                 name: 'Терапевт', 
-                route: '/service-page/terapevt'
+                route: 'Terapevt'
             },
             {
                 name: 'Уролог',
-                route: '/service-page/urolog'
+                route: 'Urolog'
             },
             {
                 name: 'Хирург', 
-                route: '/service-page/hirurg'
+                route: 'Hirurg'
             },
             {
                 name: 'Эндокринолог', 
-                route: '/service-page/endocrinolog'
+                route: 'Endocrinolog'
             },
             {
                 name: 'Медицинские комиссии', 
-                route: '/service-page/medcom'
+                route: 'Medcom'
             },
             {
                 name: 'Процедурный кабинет', 
-                route: '/service-page/procedures'
+                route: 'Procedures'
             },
             {
                 name: 'Рентген', 
-                route: '/service-page/rentgen'
+                route: 'Rentgen'
             },
             {
                 name: 'УЗИ', 
-                route: '/service-page/gastr'
+                route: 'Gastr'
             },
             {
                 name: 'Анализы', 
-                route: '/service-page/gastr'
+                route: 'Gastr'
             },
         ]
     }

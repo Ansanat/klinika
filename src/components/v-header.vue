@@ -2,23 +2,23 @@
   <div class="v-header">
     <router-link to="/"><img src="@/images/logo.png" class="logo"></router-link>
     <div class="nav-bar">
-        <router-link :to="{ name: 'Main', hash: '#main'}">
+        <router-link :to="{ name: 'Main', hash: '#head'}">
           <div class="nav-item">
             Главная
           </div>
         </router-link>
-        <router-link to="/service-page">
+        <router-link :to="{ name: 'Service', hash: '#head'}">
           <div class="nav-item">
             Услуги
           </div>
         </router-link>
-        <router-link to="/specialists-page">
+        <router-link :to="{ name: 'Specialists', hash: '#head'}">
           <div class="nav-item">
             Специалисты
           </div>
         </router-link>
         <div class="nav-item">О клинике</div>
-        <router-link to="/contacts-page">
+        <router-link :to="{ name: 'Contacts', hash: '#head'}">
           <div class="nav-item">
             Контакты
           </div>
