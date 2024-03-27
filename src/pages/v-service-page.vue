@@ -127,4 +127,7 @@ export default {
 </script>
 
 <style>
+.v-service-page {
+  text-align: center;
+}
 </style>
