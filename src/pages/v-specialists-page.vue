@@ -53,5 +53,8 @@ export default {
 </script>
 
 <style>
+.v-specialists-page {
+  text-align: center;
+}
 
 </style>

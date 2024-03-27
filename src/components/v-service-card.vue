@@ -7,7 +7,7 @@
       <div class="service-description">
         {{desc}}
       </div>
-      <Button text="Подробнее" class="service-button"/>
+      <Button text="Подробнее" class="service-card-button"/>
     </div>
 </template>
 
@@ -40,7 +40,7 @@ export default {
   margin-left: 30px;
   margin-right: 20px;
   margin-top: 40px;
-  height: 400px;
+  height: 420px;
   width: 430px;
   background-color: white;
   box-shadow: 3px 3px 10px gray;
@@ -55,10 +55,10 @@ export default {
   font-weight: bold;
 }
 
-.service-button{
+.service-card-button {
   font-size: 15px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 15px;
   height: 30px;
 }
 
@@ -67,7 +67,7 @@ export default {
   margin: auto;
   text-align: center;
   width: 420px;
-  height: 90px;
+
 }
 
 .v-service-card:hover{
