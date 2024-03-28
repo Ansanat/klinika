@@ -118,7 +118,7 @@ export default {
           name: 'Анализы', 
           desc: 'Прайс на анализы', 
           src: 'service.jpg',
-          route: 'Gastr'
+          route: 'Analysis'
         },
       ]
     }
