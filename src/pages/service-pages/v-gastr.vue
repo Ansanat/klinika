@@ -62,7 +62,7 @@ export default {
 }
 .service-about {
   overflow: hidden;
-  width: 85%;
+  width: 90%;
   height: auto;
   background-color: white;
   padding-bottom: 30px;

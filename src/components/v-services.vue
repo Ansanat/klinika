@@ -80,7 +80,7 @@ export default {
             },
             {
                 name: 'УЗИ', 
-                route: 'Gastr'
+                route: 'USI'
             },
             {
                 name: 'Анализы', 
