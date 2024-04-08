@@ -136,9 +136,13 @@ export default {
 }
 
 @media screen and (max-width: 700px) {
-.services-zag {
-    font-size: 34px;
-}
+    .services-zag {
+        font-size: 34px;
+    }
+    .service-button {
+        font-size: 16px;
+    }
+
 }
 @media screen and (min-width: 701px) and  (max-width: 1100px){
 
