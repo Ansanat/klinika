@@ -7,17 +7,17 @@
       <div class="doctor-spec">
           {{spec}}
       </div>
-      <Button text="Подробнее" class="doctor-button"/>
+      <!-- <Button text="Подробнее" class="doctor-button"/> -->
     </div>
 </template>
 
 <script>
-import Button from '@/components/v-button.vue'
+// import Button from '@/components/v-button.vue'
 
 export default {
     name: 'v-specialist-card',
     components: {
-      Button,
+      // Button,
     },
     props: {
       name: String,
@@ -38,7 +38,7 @@ export default {
   margin-left: 30px;
   margin-right: 20px;
   margin-top: 40px;
-  height: 300px;
+  padding-bottom: 30px;
   width: 315px;
   background-color: white;
   box-shadow: 3px 3px 10px gray;
