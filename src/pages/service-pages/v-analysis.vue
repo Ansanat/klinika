@@ -977,49 +977,476 @@ export default {
                 },
                 {
                   name: 'Маркеры остеопороза',
+                  size: 'price-row lor-analysis',
+                  analysis: [
+                    {
+                      name: 'B-Cross laps (С-концевые телопептиды коллагена I типа - диагностический маркер процесса остеопороза)',
+                      price: '1000 руб'
+                    },
+                    {
+                      name: 'P1NP (N-терминальный пропептид проколлагена 1 типа - диагностический маркер процесса регенерации костной ткани)',
+                      price: '1 350 руб'
+                    },
+                    {
+                      name: 'Остеокальцин',
+                      price: '550 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Кардиомаркеры',
                   size: 'price-row',
                   analysis: [
                     {
-                      name: '',
-                      price: ''
+                      name: 'Миоглобин',
+                      price: '650 руб'
                     },
                     {
-                      name: '',
-                      price: ''
-                    },
-                                        {
-                      name: '',
-                      price: ''
+                      name: 'Тропонин I',
+                      price: '450 руб'
                     },
                   ]
                 },
-                                {
-                  name: '',
-                  size: '',
+                {
+                  name: 'Микроэлементы и токсичные соединения в крови',
+                  size: 'price-row lor-analysis',
                   analysis: [
                     {
-                      name: '',
-                      price: ''
+                      name: 'Медь',
+                      price: '1 050 руб'
+                    },
+                    {
+                      name: 'Основные эссенциальные микроэлементы в сыворотке крови (медь, селен, цинк)',
+                      price: '1 500 руб'
+                    },
+                    {
+                      name: 'Токсичные элементы в цельной крови (тяжелые металлы: кадмий, ртуть, свинец)',
+                      price: '1 500 руб'
+                    },
+                    {
+                      name: 'Микроэлементы в цельной крови и сыворотке скрининг (магний, алюминий, кальций, марганец, железо, кобальт, медь, цинк, мышьяк, селен, кадмий, ртуть, свинец)',
+                      price: '3 500 руб'
+                    },
+                    {
+                      name: 'Карбоксигемоглобин',
+                      price: '500 руб'
+                    },
+                    {
+                      name: 'Метгемоглобин ',
+                      price: '500 руб'
                     },
                   ]
                 },
-                                {
-                  name: '',
-                  size: '',
+              ]
+            },
+            {
+              name: 'Серологическая диагностика инфекций',
+              analysis_groups: [
+                {
+                  name: 'ВИЧ',
+                  size: 'price-row',
                   analysis: [
                     {
-                      name: '',
-                      price: ''
+                      name: 'ВИЧ 1-2 АГ / АТ (скрининг) (ИФА) ',
+                      price: '300 руб'
                     },
                   ]
                 },
-                                {
-                  name: '',
-                  size: '',
+                {
+                  name: 'Сифилис',
+                  size: 'price-row',
                   analysis: [
                     {
-                      name: '',
-                      price: ''
+                      name: 'АТ к Treponema pallidum (скрининг) (ИФА) ',
+                      price: '300 руб'
+                    },
+                    {
+                      name: 'АТ к Treponema pallidum IgM (ИФА)  ',
+                      price: '280 руб'
+                    },
+                    {
+                      name: 'АТ к Treponema pallidum IgG (ИФА)  ',
+                      price: '280 руб'
+                    },
+                    {
+                      name: 'Syphilis RPR (антикардиолипиновый тест) ',
+                      price: '160 руб'
+                    },
+                    {
+                      name: 'Syphilis TPHA (АТ к Treponema pallidum, РПГА)  ',
+                      price: '280 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Гепатит В',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'HbsAg (скрининг) (ИФА)',
+                      price: '300 руб'
+                    },
+                    {
+                      name: 'HbeAg',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'анти-HBc-IgG',
+                      price: '200 руб'
+                    },
+                    {
+                      name: 'анти-HBe-IgG',
+                      price: '200 руб'
+                    },
+                    {
+                      name: 'HBcAg-IgM',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Anti-HBs',
+                      price: '250 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Гепатит С',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Anti-HCV (скрининг) (ИФА)',
+                      price: '300 руб'
+                    },
+                    {
+                      name: 'Anti-HCV (core, NS3, NS4, NS5)',
+                      price: '350 руб'
+                    },
+                    {
+                      name: 'Anti-HCV IgM',
+                      price: '250 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Гепатит А',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Anti-HAV IgM',
+                      price: '300 руб'
+                    },
+                    {
+                      name: 'Anti-HAV IgG  ',
+                      price: '300 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Гепатит Е',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Anti-HEV IgG  ',
+                      price: '700 руб'
+                    },
+                    {
+                      name: 'Anti-HEV IgM  ',
+                      price: '700 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Гепатит D',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Anti-HDV сумм. (IgG+IgM)',
+                      price: '300 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Герпесвирусы',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Herpes simplex virus I, II IgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Herpes simplex virus I, II IgM ',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Herpes simplex virus I, II IgG (авидность)',
+                      price: '320 руб'
+                    },
+                    {
+                      name: 'Cytomegalovirus IgG ',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Cytomegalovirus IgM',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Cytomegalovirus IgG (авидность)',
+                      price: '320 руб'
+                    },
+                    {
+                      name: 'Epstein Barr virus (АТ IgM к капсидному АГ)',
+                      price: '500 руб'
+                    },
+                    {
+                      name: 'Epstein Barr virus (АТ IgG к раннему АГ)',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Epstein Barr virus (АТ IgG к позднему АГ)',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Varicella zoster virus lgG  ',
+                      price: '800 руб'
+                    },
+                    {
+                      name: 'Varicella zoster virus IgМ  ',
+                      price: '800 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Другие вирусные инфекции',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Rubella virus IgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Rubella virus IgM',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Rubella virus IgG (авидность)',
+                      price: '320 руб'
+                    },
+                    {
+                      name: 'Антитела к Кори IgG (количественно)',
+                      price: '500 руб'
+                    },
+                    {
+                      name: 'Антитела к Кори IgM (количественно)',
+                      price: '1 200 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Трансмиссивные инфекции',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Боррелиоз; болезнь Лайма (Borrelia burgdorferi) lgG',
+                      price: '350 руб'
+                    },
+                    {
+                      name: 'Боррелиоз; болезнь Лайма (Borrelia burgdorferi ) lgM',
+                      price: '350 руб'
+                    },
+                    {
+                      name: 'Клещевой энцефалит (Tick-borne encephalitis Virus) IgG',
+                      price: '350 руб'
+                    },
+                    {
+                      name: 'Клещевой энцефалит (Tick-borne encephalitis Virus) IgМ',
+                      price: '350 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Туберкулез',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'АТ к Mycobacterium tuberculosis (ИФА)  ',
+                      price: '450 руб'
+                    },
+                    {
+                      name: 'Диагностика туберкулеза методом T-SPOT.TB',
+                      price: '7 500 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Моликуты',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Mycoplasma hominis IgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Mycoplasma hominis IgА',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Mycoplasma pneumoniae IgМ  ',
+                      price: '350 руб'
+                    },
+                    {
+                      name: 'Mycoplasma pneumoniae IgG  ',
+                      price: '350 руб'
+                    },
+                    {
+                      name: 'Ureaplasma Urealyticum lgA',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Ureaplasma Urealyticum lgG',
+                      price: '250 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Хламидии',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Chlamydia trachomatis lgA',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Chlamydia trachomatis lgM',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Chlamydia trachomatis lgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Chlamydia pneumoniae lgM  ',
+                      price: '370 руб'
+                    },
+                    {
+                      name: 'Chlamydia pneumoniae lgG  ',
+                      price: '370 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Кишечные инфекции',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Helicobacter pylori lgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Yersinia enterocolitica,  pseudotuberculosis   IgG',
+                      price: '350 руб'
+                    },
+                    {
+                      name: 'Yersinia enterocolitica,  pseudotuberculosis   IgM',
+                      price: '400 руб'
+                    },
+                    {
+                      name: 'АТ к Yersinia pseudotuberculosis (псевдотуберкулез) (РНГА)  ',
+                      price: '450 руб'
+                    },
+                    {
+                      name: 'АТ к Yersinia enterocolitica (иерсиниоз) (РПГА)  ',
+                      price: '400 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Протозойные инфекции',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Lamblia intestinalis IgM/IgG (сумм)',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'АТ Trichomonas vaginalis lgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Toxoplasma gondii IgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Toxoplasma gondii IgM',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Toxoplasma gondii IgG (авидность)',
+                      price: '320 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Грибковые инфекции',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'АТ к Candida lgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'Aspergillus fumigatus IgG (кач.)',
+                      price: '300 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Гельминтозы',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'АТ к антигенам токсокар IgG ',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'АТ к антигенам описторхисов IgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'АТ к антигенам трихинелл IgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'АТ к антигенам эхинококка IgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'АТ к антигенам анизакиды IgG',
+                      price: '250 руб'
+                    },
+                    {
+                      name: 'АТ к возбудителю аскаридоза (Ascaris lumbricoides) lgG',
+                      price: '250 руб'
+                    },
+                  ]
+                },
+                {
+                  name: 'Другие инфекции',
+                  size: 'price-row',
+                  analysis: [
+                    {
+                      name: 'Ранние антитела (IgМ) к Bortedella pertusis (коклюш)',
+                      price: '800 руб'
+                    },
+                    {
+                      name: 'Секреторные антитела (IgA) к Bortedella pertusis (коклюш)',
+                      price: '800 руб'
+                    },
+                    {
+                      name: 'Поздние антитела, IgG к Bortedella pertusis (коклюш)',
+                      price: '800 руб'
+                    },
+                    {
+                      name: 'РПГА с сыпнотифозным диагностикумом',
+                      price: '800 руб'
                     },
                   ]
                 },
