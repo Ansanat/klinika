@@ -5,6 +5,10 @@
     :pagination="{
       clickable: true,
     }"
+    :autoplay="{
+      delay: 4000,
+      disableOnInteraction: false,
+    }"
     :navigation="true"
     :modules="modules"
     class="mySwiper"
