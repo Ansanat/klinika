@@ -3,6 +3,7 @@
     <Gallery/>
     <About/>
     <Services/>
+    <Team/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Gallery from '@/components/v-main-gallery.vue'
 import About from '@/components/v-about.vue'
 import Services from '@/components/v-services.vue'
+import Team from '@/components/v-team.vue'
 
 export default {
   name: 'v-main-page',
   components: {
     Gallery,
     About,
-    Services
+    Services,
+    Team
   }
 }
 </script>

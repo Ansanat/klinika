@@ -71,6 +71,7 @@
   background-color: #121820;
   width: 13px;
   height:13px;
+  display: none;
 }
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
   color: #121820;
