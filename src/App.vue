@@ -1,6 +1,6 @@
 <template>
 <div class="klinika-app">
-  <Header id="head"/>
+  <Header id="head" class="main-header"/>
   <router-view />
   <Footer/>
 </div>

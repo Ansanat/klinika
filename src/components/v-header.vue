@@ -1,6 +1,46 @@
 <template>
-  <div class="v-header">
-    <img src="../images/icons/menu.png" class="mobile-menu">
+  <div 
+    :class="show ? 'v-mobile-header' : 'v-header'"
+  >
+    <nav class="mobile-menu">
+      <transition name="fade" mode="out-in">
+        <i 
+          v-if="!show"
+          @click="show = !show"
+          key="menu"
+          class="material-icons menu menu-icon"
+        >
+          menu
+        </i>
+        <i
+          v-else
+          @click="show = !show"
+          key="clear"
+          class="material-icons clear menu-icon"
+        >
+          clear
+        </i>
+      </transition>
+      <transition name="fade">
+        <ul 
+          v-if="show"
+          class="mobile-menu-ul"
+        >
+          <li 
+            v-for="item in menu_items" :key="item"
+            @click="show = !show"
+            class="mobile-menu-li"
+          >
+            <router-link 
+              :to="{ name: item.url, hash: '#head'}"
+              style="text-decoration: none; color: #358c21;"
+            >
+              {{ item.name }}
+            </router-link>
+          </li>
+        </ul>
+      </transition>
+    </nav>
     <router-link to="/"><img src="@/images/logo.png" class="logo"></router-link>
     <div class="nav-bar">
         <router-link :to="{ name: 'Main', hash: '#head'}">
@@ -36,13 +76,51 @@
 export default {
   name: 'v-header',
   props: {
+  },
+  data() {
+    return {
+      menu_items: [
+        {
+          name: 'Главная',
+          url: 'Main'
+        },
+        {
+          name: 'Услуги',
+          url: 'Service'
+        },
+        {
+          name: 'Специалисты',
+          url: 'Specialists'
+        },
+        {
+          name: 'О клинике',
+          url: 'AboutPage'
+        },
+        {
+          name: 'Контакты',
+          url: 'Contacts'
+        }
+      ],
+      show: false,
+    }
   }
 }
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 .v-header {
   height: 80px;
+  background-color: #b9ecad;
+}
+
+.v-mobile-header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0px;
+  height: 100%;
   background-color: #b9ecad;
 }
 
@@ -78,9 +156,38 @@ export default {
 
 .mobile-menu {
   display: none;
-  width: 50px;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.mobile-menu-ul {
+  font-weight: bold;
+  position: absolute;
+  font-size: 25px;
+  left: 0px;
+  top: 70px;
+  text-align: center;
+  width: 100%;
+}
+
+.mobile-menu-li {
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.menu-icon {
+  font-size: 50px;
+  color: #358c21;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 
 @media screen and (max-width: 700px) {
