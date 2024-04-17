@@ -111,6 +111,7 @@ export default {
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 .v-header {
+  top: 0px;
   height: 80px;
   background-color: #b9ecad;
 }
@@ -164,7 +165,7 @@ export default {
   font-weight: bold;
   position: absolute;
   font-size: 25px;
-  left: 0px;
+  left: -8%;
   top: 70px;
   text-align: center;
   width: 100%;

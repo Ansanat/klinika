@@ -157,7 +157,7 @@
 @media screen and (max-width: 700px) {
   .team {
     &-zag {
-      font-size: 34px;
+      font-size: 32px;
       text-align: center;
     }
   }

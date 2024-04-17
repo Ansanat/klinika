@@ -21,6 +21,7 @@ export default {
 
 <style>
 .klinika-app {
+  top: 0px;
   background-color: #f2fcf0;
   font-family: sans-serif;
 }
