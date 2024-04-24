@@ -71,6 +71,7 @@ export default {
 
 .social {
   margin-right: 10px;
+  width: 40px;
 }
 
 .contact-text {
