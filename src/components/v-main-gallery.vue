@@ -14,13 +14,13 @@
     class="mySwiper"
   >
     <swiper-slide>
-      <img src="../images/main-gallery/Image1.jpg" class="card-gallery">
+      <img src="../images/main-gallery/Image1.png" class="card-gallery">
       <router-link :to="{ name: 'AboutPage', hash: '#head'}">
         <Button class="route-button" text="Подробнее"/>
       </router-link>
     </swiper-slide>
     <swiper-slide>
-      <img src="../images/main-gallery/Image2.jpg" class="card-gallery">
+      <img src="../images/main-gallery/Image2.png" class="card-gallery">
       <router-link :to="{ name: 'Service', hash: '#head'}">
         <Button class="route-button" text="Подробнее"/>
       </router-link>
