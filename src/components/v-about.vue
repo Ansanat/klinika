@@ -49,7 +49,7 @@ export default {
 }
 .about-img{
     border-radius: 20px;
-    width: 80%;
+    width: 90%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }

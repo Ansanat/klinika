@@ -14,7 +14,7 @@
     class="mySwiper"
   >
     <swiper-slide>
-      <img src="../images/main-gallery/Image1.png" class="card-gallery">
+      <img src="../images/main-gallery/Image1.jpg" class="card-gallery">
       <router-link :to="{ name: 'AboutPage', hash: '#head'}">
         <Button class="route-button" text="Подробнее"/>
       </router-link>
