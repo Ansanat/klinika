@@ -8,7 +8,19 @@
         </div>
         <div class="contact">
           <img src="../images/icons/phone.png" class="contact-icon">
+          <div class="contact-text"> +7 (383) 312-19-21 </div>
+        </div>
+        <div class="contact">
+          <img src="../images/icons/phone.png" class="contact-icon">
           <div class="contact-text"> +7 (913) 200-29-24 </div>
+        </div>
+        <div class="contact">
+          <img src="../images/icons/phone.png" class="contact-icon">
+          <div class="contact-text"> +7 (913) 465-36-68 </div>
+        </div>
+        <div class="contact">
+          <img src="../images/icons/phone.png" class="contact-icon">
+          <div class="contact-text"> pulsar-iskitim@mail.ru </div>
         </div>
         <div class="contact">
           <a href="https://vk.com/klinika_zdoroviya"><img src="../images/icons/VK_logo.png" class="contact-icon social"></a>
