@@ -4,7 +4,7 @@
     <div class="v-about-header">
         <img
           class="v-about-header-image"
-          src="../images/main-gallery/Image1.jpg"
+          src="../images/main-gallery/Репин Андрей Александрович.jpg"
         />
         <div class="v-about-header-text">
           ООО «Пульсар» Клиника Здоровья имеет многолетний опыт работы в сфере предоставления медицинских услуг. <br><br>
@@ -33,7 +33,7 @@ export default {
   display: flex;
 
   &-image {
-    width: 30%;
+    width: 500px;
   }
 
   &-text {
@@ -43,6 +43,36 @@ export default {
     text-align: justify;
     margin-top: 20px;
   }
+}
+
+@media screen and (max-width: 700px) {
+  .v-about-header {
+    display: block;
+
+    &-image{
+      width: 100%;
+    }
+
+    &-text {
+      margin-left: 0px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 701px) and  (max-width: 1100px){
+    .v-about-header {
+      display: block;
+
+      &-image{
+        width: 100%;
+      }
+
+      &-text {
+        margin-left: 0px;
+        width: 100%;
+      }
+    }
 }
 
 </style>
