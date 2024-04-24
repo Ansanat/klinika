@@ -19,7 +19,7 @@
           <div class="contact-text"> +7 (913) 465-36-68 </div>
         </div>
         <div class="contact">
-          <img src="../images/icons/phone.png" class="contact-icon">
+          <img src="../images/icons/mail.png" class="contact-icon">
           <div class="contact-text"> pulsar-iskitim@mail.ru </div>
         </div>
         <div class="contact">
