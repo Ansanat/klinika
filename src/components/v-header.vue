@@ -119,8 +119,9 @@ export default {
 .v-mobile-header {
   position: fixed;
   z-index: 100;
-  width: 100%;
   top: 0px;
+  left: 0px;
+  width: 100%;
   height: 100%;
   background-color: #b9ecad;
 }
