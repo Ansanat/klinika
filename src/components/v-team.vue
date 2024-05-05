@@ -158,7 +158,6 @@
   .team {
     &-zag {
       font-size: 32px;
-      text-align: center;
     }
   }
 }

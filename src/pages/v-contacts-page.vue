@@ -78,7 +78,7 @@ export default {
   font-size: 18px;
   position: absolute;
   left: 40px;
-  top: 46%;
+  top: 55%;
   transform: translateY(-50%);
 }
 
