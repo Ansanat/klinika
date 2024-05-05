@@ -54,6 +54,7 @@ export default {
     }
 
     &-text {
+      font-family: Arial;
       margin-left: 0px;
       width: 100%;
     }

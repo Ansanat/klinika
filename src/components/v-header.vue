@@ -114,6 +114,7 @@ export default {
   top: 0px;
   height: 80px;
   background-color: #b9ecad;
+  font-family: Arial;
 }
 
 .v-mobile-header {
