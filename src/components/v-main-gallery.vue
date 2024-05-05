@@ -25,7 +25,12 @@
         <Button class="route-button" text="Подробнее"/>
       </router-link>
     </swiper-slide>
-    <swiper-slide><img src="../images/main-gallery/Image1.jpg" class="card-gallery"></swiper-slide>
+    <swiper-slide>
+      <img src="../images/main-gallery/Image3.png" class="card-gallery">
+      <router-link :to="{ name: 'Medcom', hash: '#head'}">
+        <Button class="route-button" text="Подробнее"/>
+      </router-link>
+    </swiper-slide>
   </swiper>
 </template>
 <script>
