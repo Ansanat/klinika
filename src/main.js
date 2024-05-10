@@ -22,6 +22,7 @@ import Procedures from '@/pages/service-pages/v-procedures'
 import Rentgen from '@/pages/service-pages/v-rentgen'
 import USI from '@/pages/service-pages/v-usi'
 import Analysis from '@/pages/service-pages/v-analysis'
+import Fitoterapevt from '@/pages/service-pages/v-fitoterapevt'
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -140,6 +141,11 @@ const router = createRouter ({
             path: '/about-page',
             component: AboutPage,
             name: 'AboutPage'
+        },
+        {
+            path: '/service-page/fitoterapevt',
+            component: Fitoterapevt,
+            name: 'Fitoterapevt'
         }
     ],
     history: createWebHistory()
