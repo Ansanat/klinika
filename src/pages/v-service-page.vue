@@ -109,6 +109,12 @@ export default {
           route: 'Procedures'
         },
         {
+          name: 'Функциональная диагностика', 
+          desc: 'Прейскурант на услуги кабинета функциональной диагностики', 
+          src: 'service.jpg',
+          route: 'Diagnostika'
+        },
+        {
           name: 'Рентген', 
           desc: 'Прайс-лист Рентгенологического кабинета', 
           src: 'service.jpg',
