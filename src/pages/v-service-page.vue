@@ -129,7 +129,7 @@ export default {
         {
           name: 'Анализы', 
           desc: 'Прайс на анализы', 
-          src: 'service.jpg',
+          src: 'Анализы.png',
           route: 'Analysis'
         },
       ]
