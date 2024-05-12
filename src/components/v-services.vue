@@ -86,6 +86,14 @@ export default {
                 name: 'Анализы', 
                 route: 'Gastr'
             },
+            {
+                name: 'Функциональная диагностика',
+                route: 'Diagnostika'
+            },
+            {
+                name: 'Фитотерапевт',
+                route: 'Fitoterapevt'
+            }
         ]
     }
   }

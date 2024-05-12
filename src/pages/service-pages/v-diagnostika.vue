@@ -6,8 +6,8 @@
             <div class="price-line"></div>
             <div v-for="service in diagnostika_services" :key="service">
                 <div class="price-row">
-                <div class="price-name">{{service.name}}</div>
-                <div class="price-price">{{service.price}}</div>
+                    <div class="price-name">{{service.name}}</div>
+                    <div class="price-price">{{service.price}}</div>
                 </div>
                 <div class="price-line"></div>
             </div>
