@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="img-block">
-        <img src="../images/about/enter.jpg" class="enter-img"/>
+        <img src="../images/about/enter.jpeg" class="enter-img"/>
       </div>
     </div>
     <iframe

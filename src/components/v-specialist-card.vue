@@ -29,9 +29,10 @@ export default {
 
 <style>
 
-.v-specialist-card{
+.v-specialist-card {
   box-sizing: border-box;
   overflow: hidden;
+  vertical-align: middle;
   cursor: pointer;
   display: inline-block;
   border-radius: 20px;
@@ -40,37 +41,38 @@ export default {
   margin-top: 40px;
   padding-bottom: 30px;
   width: 315px;
+  height: 280px;
   background-color: white;
   box-shadow: 3px 3px 10px gray;
 }
 
-.doctor-name{
+.doctor-name {
   padding-top: 10px;
   margin: auto;
   text-align: center;
-  font-size: 16px;
+  font-size: 17px;
   width: 310px;
 }
 
-.doctor-button{
+.doctor-button {
   font-size: 15px;
   margin: auto;
   margin-top: 10px;
   height: 30px;
 }
 
-.doctor-spec{
+.doctor-spec {
   text-align: center;
   font-weight: bold;
-  margin-top: 2px;
+  margin-top: 4px;
   font-size: 14px;
 }
 
-.v-specialist-card:hover{
+.v-specialist-card:hover {
   box-shadow: 3px 3px 20px gray;
 }
 
-.doctor-img{
+.doctor-img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
