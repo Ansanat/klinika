@@ -84,7 +84,7 @@ export default {
             },
             {
                 name: 'Анализы', 
-                route: 'Gastr'
+                route: 'Analysis'
             },
             {
                 name: 'Функциональная диагностика',
