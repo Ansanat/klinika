@@ -58,6 +58,11 @@
             Специалисты
           </div>
         </router-link>
+        <router-link :to="{ name: 'Vacancies', hash: '#head'}">
+          <div class="nav-item">
+            Вакансии
+          </div>
+        </router-link>
         <router-link :to="{ name: 'AboutPage', hash: '#head'}">
           <div class="nav-item">
             О клинике
@@ -91,6 +96,10 @@ export default {
         {
           name: 'Специалисты',
           url: 'Specialists'
+        },
+        {
+          name: 'Вакансии',
+          url: 'Vacancies'
         },
         {
           name: 'О клинике',

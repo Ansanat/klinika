@@ -4,6 +4,7 @@ import Contacts from '@/pages/v-contacts-page'
 import Main from '@/pages/v-main-page'
 import Specialists from '@/pages/v-specialists-page'
 import Service from '@/pages/v-service-page'
+import Vacancies from '@/pages/v-vacancies-page'
 import AboutPage from '@/pages/v-about-page'
 
 import Gastr from '@/pages/service-pages/v-gastr'
@@ -47,6 +48,11 @@ const router = createRouter ({
             path: '/service-page',
             component: Service,
             name: 'Service'
+        },
+        {
+            path: '/vacancies-page',
+            component: Vacancies,
+            name: 'Vacancies'
         },
         {
             path: '/service-page/gastr',
