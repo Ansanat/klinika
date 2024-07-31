@@ -12,6 +12,9 @@
                 <div class="price-line"></div>
             </div>
         </div>
+        <div class="service-header">График приема пациентов по услугам:</div>
+        <div class="service-text">- Холтер ЭКГ, Холтер АД с 12:00 до 13:00</div>
+        <div class="service-text">- Внутривенное капельное введение(капельница) с 12:00 до 13:30</div>
     </div>
 </div>
 </template>
