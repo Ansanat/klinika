@@ -6,7 +6,7 @@
       clickable: true,
     }"
     :autoplay="{
-      delay: 4000,
+      delay: 5000,
       disableOnInteraction: false,
     }"
     :navigation="true"
@@ -30,6 +30,9 @@
       <router-link :to="{ name: 'Medcom', hash: '#head'}">
         <Button class="route-button" text="Подробнее"/>
       </router-link>
+    </swiper-slide>
+    <swiper-slide>
+      <img src="../images/main-gallery/Image4.png" class="card-gallery">
     </swiper-slide>
   </swiper>
 </template>
@@ -102,6 +105,14 @@
   .card-gallery {
     aspect-ratio: 3 / 3;
     object-fit: cover;
+  }
+
+  .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+    display: none;
+  }
+
+  .swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after {
+    display: none;
   }
 }
 </style>

@@ -202,7 +202,7 @@ export default {
   opacity: 0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 830px) {
   .nav-bar{
     display: none;
   }
@@ -215,7 +215,7 @@ export default {
     display: inline-block;
   }
 }
-@media screen and (min-width: 701px) and  (max-width: 1100px){
+@media screen and (min-width: 831px) and  (max-width: 1100px){
   .nav-bar{
     width: 65%;
   }
