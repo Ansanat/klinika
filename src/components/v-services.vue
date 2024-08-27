@@ -90,10 +90,10 @@ export default {
                 name: 'Функциональная диагностика',
                 route: 'Diagnostika'
             },
-            {
-                name: 'Фитотерапевт',
-                route: 'Fitoterapevt'
-            }
+            // {
+            //     name: 'Фитотерапевт',
+            //     route: 'Fitoterapevt'
+            // }
         ]
     }
   }

@@ -25,6 +25,7 @@ import USI from '@/pages/service-pages/v-usi'
 import Analysis from '@/pages/service-pages/v-analysis'
 import Fitoterapevt from '@/pages/service-pages/v-fitoterapevt'
 import Diagnostika from '@/pages/service-pages/v-diagnostika'
+import Stomatolog from '@/pages/service-pages/v-stomatolog'
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -158,6 +159,11 @@ const router = createRouter ({
             path: '/service-page/diagnostika',
             component: Diagnostika,
             name: 'Diagnostika'
+        },
+        {
+            path: '/service-page/stomatolog',
+            component: Stomatolog,
+            name: 'Stomatolog'
         }
     ],
     history: createWebHistory()
