@@ -41,8 +41,4 @@ export default {
   text-align: left;
   padding-bottom: 100px;
 }
-
-.discount-card: {
-  height: 200px !important;
-}
 </style>
