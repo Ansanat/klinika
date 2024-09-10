@@ -6,6 +6,7 @@
           :img="service.src"
           :desc="service.desc"
           :name="service.name"
+          :buttonVisible="true"
         />
       </router-link>
     </div>
@@ -28,7 +29,8 @@ export default {
           name: 'Гастроэнтеролог', 
           desc: 'Врач-гастроэнтеролог поможет вовремя распознать начало течения болезни, даст рекомендации для быстрого снятия неприятных симптомов и подберет индивидуальную схему лечения.', 
           src: 'Гастроэнтеролог.jpeg',
-          route: 'Gastr'
+          route: 'Gastr',
+          buttonVisible: true
         },
         {
           name: 'Гинеколог', 

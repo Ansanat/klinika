@@ -53,6 +53,11 @@
             Услуги
           </div>
         </router-link>
+        <router-link :to="{ name: 'Discount', hash: '#head'}">
+          <div class="nav-item">
+            Акции
+          </div>
+        </router-link>
         <router-link :to="{ name: 'Specialists', hash: '#head'}">
           <div class="nav-item">
             Специалисты
@@ -61,6 +66,11 @@
         <router-link :to="{ name: 'Vacancies', hash: '#head'}">
           <div class="nav-item">
             Вакансии
+          </div>
+        </router-link>
+        <router-link :to="{ name: 'Feedback', hash: '#head'}">
+          <div class="nav-item">
+            Отзывы
           </div>
         </router-link>
         <router-link :to="{ name: 'AboutPage', hash: '#head'}">
@@ -94,12 +104,20 @@ export default {
           url: 'Service'
         },
         {
+          name: 'Акции',
+          url: 'Discount'
+        },
+        {
           name: 'Специалисты',
           url: 'Specialists'
         },
         {
           name: 'Вакансии',
           url: 'Vacancies'
+        },
+        {
+          name: 'Отзывы',
+          url: 'Feedback'
         },
         {
           name: 'О клинике',
@@ -202,7 +220,7 @@ export default {
   opacity: 0;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1146px) {
   .nav-bar{
     display: none;
   }

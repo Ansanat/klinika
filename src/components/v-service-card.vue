@@ -7,7 +7,12 @@
       <div class="service-description">
         {{desc}}
       </div>
-      <Button text="Подробнее" class="service-card-button"/>
+      <div v-if="buttonVisible">
+        <Button 
+          text="Подробнее"
+          class="service-card-button"
+        />
+      </div>
     </div>
 </template>
 
@@ -22,8 +27,9 @@ export default {
     props: {
       name: String,
       desc: String,
-      img: String
-    }
+      img: String,
+      buttonVisible: Boolean
+    },
 }
 </script>
 

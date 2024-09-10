@@ -5,6 +5,8 @@ import Main from '@/pages/v-main-page'
 import Specialists from '@/pages/v-specialists-page'
 import Service from '@/pages/v-service-page'
 import Vacancies from '@/pages/v-vacancies-page'
+import Feedback from '@/pages/v-feedback-page'
+import Discount from '@/pages/v-discount-page'
 import AboutPage from '@/pages/v-about-page'
 
 import Gastr from '@/pages/service-pages/v-gastr'
@@ -54,6 +56,16 @@ const router = createRouter ({
             path: '/vacancies-page',
             component: Vacancies,
             name: 'Vacancies'
+        },
+        {
+            path: '/feedback-page',
+            component: Feedback,
+            name: 'Feedback'
+        },
+        {
+            path: '/discount-page',
+            component: Discount,
+            name: 'Discount'
         },
         {
             path: '/service-page/gastr',
