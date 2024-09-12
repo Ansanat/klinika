@@ -30,6 +30,12 @@ export default {
           src: 'СВО.jpg',
           buttonVisible: false
         },
+        {
+          name: 'Пенсионерам', 
+          desc: 'Скидка 10% с 30.09 по 6.10 в честь Дня пожилого человека при предъявлении пенсионного.', 
+          src: 'pens.png',
+          buttonVisible: false
+        },
       ]
     }
   }
@@ -38,7 +44,7 @@ export default {
 
 <style>
 .v-discount-page {
-  text-align: left;
+  text-align: center;
   padding-bottom: 100px;
 }
 </style>
