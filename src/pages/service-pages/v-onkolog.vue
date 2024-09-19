@@ -38,6 +38,12 @@ export default {
     name: 'v-gastr',
     props: {
     },
+    mounted() {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = "Клиника здоровья онколог";
+        document.body.appendChild(meta);
+    },
     data() {
         return {
             onkolog_services: [

@@ -24,6 +24,12 @@ export default {
     name: 'v-diagnostika',
     props: {
     },
+    mounted() {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = "Клиника здоровья функциональная диагностика";
+        document.body.appendChild(meta);
+    },
     data() {
         return {
             diagnostika_services: [

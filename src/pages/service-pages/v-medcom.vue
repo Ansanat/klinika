@@ -21,6 +21,12 @@ export default {
     name: 'v-gastr',
     props: {
     },
+    mounted() {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = "Клиника здоровья медкомиссии водительская комиссия";
+        document.body.appendChild(meta);
+    },
     data() {
         return {
             medcom_services: [

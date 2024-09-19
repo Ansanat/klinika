@@ -44,6 +44,12 @@ export default {
     name: 'v-gastr',
     props: {
     },
+    mounted() {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = "Клиника здоровья хирург";
+        document.body.appendChild(meta);
+    },
     data() {
         return {
             hirurg_services: [

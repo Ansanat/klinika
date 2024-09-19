@@ -18,7 +18,7 @@ export default {
   mounted() {
     const meta = document.createElement("meta");
     meta.name = "description";
-    meta.content = "Клиника здоровья отзывы Пульсар отзывы Клиника здоровья Искитим";
+    meta.content = "Клиника здоровья отзывы";
     document.body.appendChild(meta);
 
     const script = document.createElement("script");

@@ -23,6 +23,12 @@ export default {
     name: 'v-stomatolog',
     props: {
     },
+    mounted() {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = "Клиника здоровья стоматолог";
+        document.body.appendChild(meta);
+    },
     data() {
         return {
             stomatolog_services: [

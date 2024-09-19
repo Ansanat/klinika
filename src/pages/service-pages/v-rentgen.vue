@@ -21,6 +21,12 @@ export default {
     name: 'v-gastr',
     props: {
     },
+    mounted() {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = "Клиника здоровья рентген";
+        document.body.appendChild(meta);
+    },
     data() {
         return {
             rentgen_services: [

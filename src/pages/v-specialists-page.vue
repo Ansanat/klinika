@@ -20,6 +20,12 @@ export default {
   },
   props: {
   },
+  mounted() {
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = "Клиника здоровья врачи специалисты";
+    document.body.appendChild(meta);
+  },
   data() {
     return {
       doctors: [

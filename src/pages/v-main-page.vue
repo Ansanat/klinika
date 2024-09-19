@@ -20,7 +20,13 @@ export default {
     About,
     Services,
     Team
-  }
+  },
+  mounted() {
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = "Клиника здоровья Искитим";
+    document.body.appendChild(meta);
+  },
 }
 </script>
 

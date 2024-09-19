@@ -43,6 +43,12 @@
 <script>
 export default {
   name: 'v-contacts-page',
+  mounted() {
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = "Клиника здоровья адрес";
+    document.body.appendChild(meta);
+  },
   props: {
   }
 }

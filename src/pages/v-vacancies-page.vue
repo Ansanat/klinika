@@ -19,6 +19,12 @@ export default {
   components: {
 
   },
+  mounted() {
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = "Клиника здоровья вакансии";
+    document.body.appendChild(meta);
+  },
   data() {
     return {
       vacancies: [

@@ -30,6 +30,12 @@ export default {
     name: 'v-gastr',
     props: {
     },
+    mounted() {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = "Клиника здоровья процедурный кабинет ЭКГ";
+        document.body.appendChild(meta);
+    },
     data() {
         return {
             procedures_services: [

@@ -25,6 +25,12 @@
 <script>
 export default {
   name: 'v-gastr',
+  mounted() {
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = "Клиника здоровья гастроэнтеролог";
+    document.body.appendChild(meta);
+  },
   props: {
   }
 }

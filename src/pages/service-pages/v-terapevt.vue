@@ -37,6 +37,12 @@ export default {
     name: 'v-gastr',
     props: {
     },
+    mounted() {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content = "Клиника здоровья терапевт";
+        document.body.appendChild(meta);
+    },
     data() {
         return {
             terapevt_services: [

@@ -21,6 +21,12 @@ export default {
   components: {
     Card
   },
+  mounted() {
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = "Клиника здоровья акции скидки";
+    document.body.appendChild(meta);
+  },
   data() {
     return {
       services: [

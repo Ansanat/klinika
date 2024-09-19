@@ -34,6 +34,12 @@ export default {
     name: 'v-analysis',
     props: {
     },
+    mounted() {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Клиника здоровья анализы";
+      document.body.appendChild(meta);
+    },
     data() {
         return {
           analysis_list: [
