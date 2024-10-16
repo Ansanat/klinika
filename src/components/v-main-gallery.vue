@@ -6,13 +6,16 @@
       clickable: true,
     }"
     :autoplay="{
-      delay: 5000,
+      delay: 6000,
       disableOnInteraction: false,
     }"
     :navigation="true"
     :modules="modules"
     class="mySwiper"
   >
+    <swiper-slide>
+      <img src="../images/main-gallery/cardiolog.jpg" class="card-gallery">
+    </swiper-slide>
     <swiper-slide>
       <img src="../images/main-gallery/Image0.jpg" class="card-gallery">
     </swiper-slide>
