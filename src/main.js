@@ -28,6 +28,7 @@ import Analysis from '@/pages/service-pages/v-analysis'
 import Fitoterapevt from '@/pages/service-pages/v-fitoterapevt'
 import Diagnostika from '@/pages/service-pages/v-diagnostika'
 import Stomatolog from '@/pages/service-pages/v-stomatolog'
+import Mammolog from '@/pages/service-pages/v-mammolog'
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -146,6 +147,11 @@ const router = createRouter ({
             path: '/service-page/analysis',
             component: Analysis,
             name: 'Analysis'
+        },
+        {
+            path: '/service-page/mammolog',
+            component: Mammolog,
+            name: 'Mammolog'
         },
         {
             path: '/contacts-page',

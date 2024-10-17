@@ -2,7 +2,7 @@
   <div class="v-discount-page">
     <div v-for="service in services" :key="service" style="display: inline-block;">
       <Card
-        style="height: 300px;"
+        style="height: 350px;"
         :img="service.src"
         :desc="service.desc"
         :name="service.name"
@@ -51,6 +51,6 @@ export default {
 <style>
 .v-discount-page {
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 </style>

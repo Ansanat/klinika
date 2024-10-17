@@ -67,6 +67,10 @@ export default {
                 route: 'Endocrinolog'
             },
             {
+                name: 'Онколог-маммолог', 
+                route: 'Mammolog'
+            },
+            {
                 name: 'Медицинские комиссии', 
                 route: 'Medcom'
             },
