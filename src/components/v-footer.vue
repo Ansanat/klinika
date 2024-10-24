@@ -6,6 +6,7 @@
         <br>
         <a href="https://vk.com/klinika_zdoroviya"><img src="../images/icons/VK_logo.png" class="contact-icon social footer-contact-item"></a>
         <a href="https://www.instagram.com/klinika_zdoroviya_iskitim/?hl=es"><img src="../images/icons/Inst_logo.png" class="contact-icon social footer-contact-item"></a>
+        <a href="https://t.me/klinika_zdoroviya"><img src="../images/icons/telegram_logo.png" class="contact-icon social footer-contact-item"></a>
     </div>
     <div class="copyright">©Клиника здоровья, 2024 г.</div>
   </div>
