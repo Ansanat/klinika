@@ -14,6 +14,9 @@
     class="mySwiper"
   >
     <swiper-slide>
+      <img src="../images/main-gallery/notwork.jpg" class="card-gallery">
+    </swiper-slide>
+    <swiper-slide>
       <img src="../images/main-gallery/cardiolog.jpg" class="card-gallery">
     </swiper-slide>
     <swiper-slide>
