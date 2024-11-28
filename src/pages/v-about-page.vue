@@ -14,8 +14,8 @@
           <i>Генеральный директор ООО "ПУЛЬСАР" Репин Андрей Александрович</i>
         </div>
     </div>
-    <div class="service-header" style="text-align: center; margin-bottom: 20px;">Лицензия</div>
-    <div class="v-about-license-block">
+    <!-- <div class="service-header" style="text-align: center; margin-bottom: 20px;">Лицензия</div> -->
+    <!-- <div class="v-about-license-block">
       <img
         class="v-about-license" 
         v-for="i in 3" :key="i"
@@ -27,7 +27,7 @@
         v-for="i in 13" :key="i"
         :src="`../images/license2020/${i}.jpeg`"
       />
-    </div>
+    </div> -->
   </div>
 </template>
 
