@@ -1,6 +1,7 @@
 <template>
   <div class="v-main-page">
     <Gallery/>
+    <NG/>
     <About/>
     <Services/>
     <Team/>
@@ -10,6 +11,7 @@
 <script>
 import Gallery from '@/components/v-main-gallery.vue'
 import About from '@/components/v-about.vue'
+import NG from '@/components/v-ng.vue'
 import Services from '@/components/v-services.vue'
 import Team from '@/components/v-team.vue'
 
@@ -19,7 +21,8 @@ export default {
     Gallery,
     About,
     Services,
-    Team
+    Team,
+    NG
   },
   mounted() {
     const meta = document.createElement("meta");
