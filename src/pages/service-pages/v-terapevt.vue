@@ -48,11 +48,11 @@ export default {
             terapevt_services: [
                 {
                     name: 'Первичный прием',
-                    price: '1 700 руб'
+                    price: '2 000 руб'
                 },
                 {
                     name: 'Повторный прием',
-                    price: '1 400 руб'
+                    price: '1 700 руб'
                 },
                 {
                     name: 'Консультация на дому без ЭКГ',

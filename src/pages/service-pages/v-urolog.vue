@@ -55,11 +55,11 @@ export default {
             urolog_services: [
                 {
                     name: 'Первичный прием',
-                    price: '1 700 руб'
+                    price: '2 000 руб'
                 },
                 {
                     name: 'Повторный прием',
-                    price: '1 500 руб'
+                    price: '1 700 руб'
                 },
                 {
                     name: 'Устная консультация',
