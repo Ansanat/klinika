@@ -14,12 +14,6 @@
     class="mySwiper"
   >
     <swiper-slide>
-      <img src="../images/main-gallery/cardiolog.jpg" class="card-gallery">
-    </swiper-slide>
-    <swiper-slide>
-      <img src="../images/main-gallery/Image0.jpg" class="card-gallery">
-    </swiper-slide>
-    <swiper-slide>
       <img src="../images/main-gallery/Image2.png" class="card-gallery">
       <router-link :to="{ name: 'Service', hash: '#head'}">
         <Button class="route-button" text="Подробнее"/>

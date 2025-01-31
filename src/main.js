@@ -29,6 +29,8 @@ import Fitoterapevt from '@/pages/service-pages/v-fitoterapevt'
 import Diagnostika from '@/pages/service-pages/v-diagnostika'
 import Stomatolog from '@/pages/service-pages/v-stomatolog'
 import Mammolog from '@/pages/service-pages/v-mammolog'
+import Neirohirurg from '@/pages/service-pages/v-neirohirurg'
+import Sshirurg from '@/pages/service-pages/v-sshirurg'
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -132,6 +134,16 @@ const router = createRouter ({
             path: '/service-page/procedures',
             component: Procedures,
             name: 'Procedures'
+        },
+        {
+            path: '/service-page/neirohirurg',
+            component: Neirohirurg,
+            name: 'Neirohirurg'
+        },
+        {
+            path: '/service-page/heart-hirurg',
+            component: Sshirurg,
+            name: 'Sshirurg'
         },
         {
             path: '/service-page/rentgen',
