@@ -53,11 +53,11 @@
             Услуги
           </div>
         </router-link>
-        <router-link :to="{ name: 'Discount', hash: '#head'}">
+        <!-- <router-link :to="{ name: 'Discount', hash: '#head'}">
           <div class="nav-item">
             Акции
           </div>
-        </router-link>
+        </router-link> -->
         <router-link :to="{ name: 'Specialists', hash: '#head'}">
           <div class="nav-item">
             Специалисты
