@@ -1,0 +1,13 @@
+# Build files
+/dist
+/build
+/out
+
+# Dependencies
+/node_modules
+
+# Cache
+.cache
+.npm
+.yarn
+pnpm-lock.yaml
