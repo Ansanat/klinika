@@ -14,7 +14,7 @@
     class="mySwiper"
   >
   <swiper-slide>
-    <img src="../images/main-gallery/онколог.jpg" class="card-gallery">
+    <img src="../images/main-gallery/эндокринолог.jpg" class="card-gallery">
     <!-- <router-link :to="{ name: 'Service', hash: '#head'}">
       <Button class="route-button" text="Подробнее"/>
     </router-link> -->
