@@ -5,6 +5,7 @@ import Main from '@/pages/v-main-page'
 import Specialists from '@/pages/v-specialists-page'
 import Service from '@/pages/v-service-page'
 import Vacancies from '@/pages/v-vacancies-page'
+import Schedule from '@/pages/v-schedule-page'
 import Feedback from '@/pages/v-feedback-page'
 import Discount from '@/pages/v-discount-page'
 import AboutPage from '@/pages/v-about-page'
@@ -59,6 +60,11 @@ const router = createRouter ({
             path: '/vacancies-page',
             component: Vacancies,
             name: 'Vacancies'
+        },
+        {
+            path: '/schedule-page',
+            component: Schedule,
+            name: 'Schedule'
         },
         {
             path: '/feedback-page',

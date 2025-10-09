@@ -68,6 +68,11 @@
             Вакансии
           </div>
         </router-link>
+        <router-link :to="{ name: 'Schedule', hash: '#head'}">
+          <div class="nav-item">
+            Расписание
+          </div>
+        </router-link>
         <router-link :to="{ name: 'Feedback', hash: '#head'}">
           <div class="nav-item">
             Отзывы
@@ -114,6 +119,10 @@ export default {
         {
           name: 'Вакансии',
           url: 'Vacancies'
+        },
+        {
+          name: 'Расписание',
+          url: 'Schedule'
         },
         {
           name: 'Отзывы',
