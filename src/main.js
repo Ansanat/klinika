@@ -29,6 +29,7 @@ import Analysis from '@/pages/service-pages/v-analysis'
 import Fitoterapevt from '@/pages/service-pages/v-fitoterapevt'
 import Diagnostika from '@/pages/service-pages/v-diagnostika'
 import Stomatolog from '@/pages/service-pages/v-stomatolog'
+import StomatologOrtoped from '@/pages/service-pages/v-stomatolog-ortoped'
 import Mammolog from '@/pages/service-pages/v-mammolog'
 import Neirohirurg from '@/pages/service-pages/v-neirohirurg'
 import Sshirurg from '@/pages/service-pages/v-sshirurg'
@@ -200,6 +201,11 @@ const router = createRouter ({
             path: '/service-page/stomatolog',
             component: Stomatolog,
             name: 'Stomatolog'
+        },
+        {
+            path: '/service-page/stomatolog-ortoped',
+            component: StomatologOrtoped,
+            name: 'StomatologOrtoped'
         }
     ],
     history: createWebHistory()
