@@ -21,6 +21,9 @@
           clear
         </i>
       </transition>
+      <div class="mobile-accessibility-toggle" @click="toggleAccessibility">
+        <i class="material-icons">visibility</i>
+      </div>
       <transition name="fade">
         <ul 
           v-if="show"
@@ -38,11 +41,21 @@
               {{ item.name }}
             </router-link>
           </li>
+          <li 
+            @click="toggleAccessibility(); show = !show"
+            class="mobile-menu-li"
+            style="cursor: pointer;"
+          >
+            <span style="text-decoration: none; color: #358c21;">
+              {{ isAccessibilityMode ? 'Обычная версия' : 'Версия для слабовидящих' }}
+            </span>
+          </li>
         </ul>
       </transition>
     </nav>
-    <router-link to="/"><img src="@/images/logo.png" class="logo"></router-link>
-    <div class="nav-bar">
+    <div class="header-content">
+      <router-link to="/"><img src="@/images/logo.png" class="logo"></router-link>
+      <div class="nav-bar">
         <router-link :to="{ name: 'Main', hash: '#head'}">
           <div class="nav-item">
             Главная
@@ -88,14 +101,28 @@
             Контакты
           </div>
         </router-link>
+      </div>
+      <div class="accessibility-toggle" @click="toggleAccessibility">
+        <i class="material-icons">visibility</i>
+        <span class="accessibility-text">{{ isAccessibilityMode ? 'Обычная версия' : 'Версия для слабовидящих' }}</span>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { useAccessibility } from '@/composables/useAccessibility'
+
 export default {
   name: 'v-header',
   props: {
+  },
+  setup() {
+    const { isAccessibilityMode, toggleAccessibilityMode } = useAccessibility()
+    return {
+      isAccessibilityMode,
+      toggleAccessibility: toggleAccessibilityMode
+    }
   },
   data() {
     return {
@@ -151,42 +178,80 @@ export default {
   height: 80px;
   background-color: #b9ecad;
   font-family: Arial;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10px;
+  overflow-x: hidden;
+  flex-shrink: 1;
 }
 
 .v-mobile-header {
   position: fixed;
-  z-index: 100;
+  z-index: 10000;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  max-width: 100vw;
+  height: 100vh;
   background-color: #b9ecad;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .logo {
   cursor: pointer;
   height: 50px;
   margin-left: 80px;
-  margin-top: 15px;
+  max-width: 200px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .nav-bar {
   height: 50px;
-  width: 70%;
+  flex: 1;
+  min-width: 0;
   vertical-align: middle;
   text-align: center;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  margin: 0 8px;
 }
 
 .nav-item {
   font-weight: 100;
   cursor: pointer;
-  margin-left: 2%;
-  margin-right: 2%;
   text-align: center;
   display: inline-block;
   color: black;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-item:hover {
@@ -197,26 +262,113 @@ export default {
   display: none;
   margin-left: 10px;
   cursor: pointer;
+  position: relative;
+  z-index: 10002;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.v-mobile-header .mobile-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10002;
+}
+
+.mobile-accessibility-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #358c21;
+  padding: 5px;
+}
+
+.mobile-accessibility-toggle .material-icons {
+  font-size: 50px;
+  color: #358c21;
+}
+
+.mobile-accessibility-toggle:hover .material-icons {
+  color: #2a6f18;
 }
 
 .mobile-menu-ul {
   font-weight: bold;
-  position: absolute;
+  position: fixed;
   font-size: 25px;
-  left: -8%;
-  top: 70px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   text-align: center;
   width: 100%;
+  height: 100vh;
+  background-color: #b9ecad;
+  z-index: 10001;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+  overflow-y: auto;
 }
 
 .mobile-menu-li {
   list-style-type: none;
-  margin-top: 30px;
+  margin: 15px 0;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 400px;
 }
 
 .menu-icon {
   font-size: 50px;
   color: #358c21;
+}
+
+.accessibility-toggle {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 8px 12px;
+  background-color: #358c21;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  max-width: 250px;
+}
+
+.accessibility-toggle:hover {
+  background-color: #2a6f18;
+}
+
+.accessibility-toggle .material-icons {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.accessibility-text {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1146px) {
+  .accessibility-toggle {
+    display: none;
+  }
 }
 
 .fade-enter-active,
@@ -235,11 +387,35 @@ export default {
   }
 
   .logo {
-    margin-left: 50px;
+    margin-left: 10px;
+    max-width: 150px;
+    flex-shrink: 1;
   }
 
   .mobile-menu {
-    display: inline-block;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .mobile-accessibility-toggle {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .v-header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .header-content {
+    padding: 0 5px;
+    gap: 5px;
+  }
+
+  .accessibility-toggle {
+    display: none;
   }
 }
 @media screen and (min-width: 831px) and  (max-width: 1100px){

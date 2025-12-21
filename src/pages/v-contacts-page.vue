@@ -7,14 +7,17 @@
           <div class="contact-text"> Искитим, ул. Комсомольская, 44 </div>
         </div>
         <div class="contact">
+          <div class="contact-text" style="font-weight: bold; font-size: 20px; margin-bottom: 15px; margin-top: 10px; padding-left: 0;">Регистратура:</div>
+        </div>
+        <div class="contact" style="margin-top: 5px;">
           <img src="../images/icons/phone.png" class="contact-icon">
           <div class="contact-text"> +7 (383) 312-19-21 </div>
         </div>
-        <div class="contact">
+        <div class="contact" style="margin-top: 5px;">
           <img  class="contact-icon">
           <div class="contact-text"> +7 (913) 200-29-24 </div>
         </div>
-        <div class="contact" style="margin-top: 10px">
+        <div class="contact" style="margin-top: 5px;">
           <img class="contact-icon">
           <div class="contact-text"> +7 (913) 465-36-68 </div>
         </div>

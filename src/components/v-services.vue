@@ -5,7 +5,6 @@
             <router-link
                 v-for="service in services" :key="service"
                 class="service-button"
-                style="margin-right: 10px;"
                 :to="{ name: service.route, hash: '#head'}"
             >
                 {{ service.name }}
@@ -108,17 +107,25 @@ export default {
 
 .v-services{
     width: 85%;
+    max-width: 100%;
     margin: auto;
     margin-top: 80px;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .service-buttons {
     width: 100%;
+    max-width: 100%;
     margin-top: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .service-button {
     margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     display: inline-block;
     text-decoration: none;
     padding-top: 10px;
@@ -134,6 +141,9 @@ export default {
     font-size: 20px;
     box-shadow: 2px 2px 2px gray;
     color: black;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 .service-button:hover{
@@ -148,13 +158,37 @@ export default {
 }
 
 @media screen and (max-width: 700px) {
-    .services-zag {
-        font-size: 34px;
-    }
-    .service-button {
-        font-size: 16px;
+    .v-services {
+        width: 100%;
+        max-width: 100vw;
+        padding: 0 10px;
+        margin-top: 20px;
     }
 
+    .services-zag {
+        font-size: 34px;
+        padding: 0 10px;
+        word-wrap: break-word;
+        box-sizing: border-box;
+    }
+
+    .service-buttons {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+
+    .service-button {
+        font-size: 16px;
+        width: calc(100% - 10px);
+        max-width: calc(100% - 10px);
+        margin-right: 0;
+        display: block;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        white-space: normal;
+    }
 }
 @media screen and (min-width: 701px) and  (max-width: 1100px){
 
