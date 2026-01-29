@@ -56,6 +56,70 @@ body, html {
   box-sizing: border-box;
 }
 
+/* Таблицы цен на страницах услуг (общие стили) */
+.price-table {
+  padding-top: 20px;
+  width: 85%;
+  height: auto;
+  margin: auto;
+  font-size: 18px;
+}
+
+.price-row {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  clear: both;
+}
+
+.price-name {
+  flex: 1;
+  min-width: 0;
+  margin-right: 20px;
+}
+
+.price-price {
+  flex-shrink: 0;
+  text-align: right;
+  color: #358c21;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.price-line {
+  border-top: 1px solid #358c21;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .price-table {
+    font-size: 16px;
+    width: 95%;
+  }
+
+  .price-row {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+  }
+
+  .price-name {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .price-price {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
 /* Стили для версии слабовидящих */
 .accessibility-mode {
   font-size: 1.5em !important;
