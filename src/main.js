@@ -10,15 +10,19 @@ import Feedback from '@/pages/v-feedback-page'
 import Discount from '@/pages/v-discount-page'
 import AboutPage from '@/pages/v-about-page'
 
-import Gastr from '@/pages/service-pages/v-gastr'
+// Гастроэнтеролог — временно отключено
+// import Gastr from '@/pages/service-pages/v-gastr'
 import Ginecolog from '@/pages/service-pages/v-ginecolog'
 import Cardiolog from '@/pages/service-pages/v-cardiolog'
 import LOR from '@/pages/service-pages/v-lor'
-import Nevrolog from '@/pages/service-pages/v-nevrolog'
+// Невролог — временно отключено
+// import Nevrolog from '@/pages/service-pages/v-nevrolog'
 import Onkolog from '@/pages/service-pages/v-onkolog'
-import Oftalmolog from '@/pages/service-pages/v-oftalmolog'
+// Офтальмолог — временно отключено
+// import Oftalmolog from '@/pages/service-pages/v-oftalmolog'
 import Terapevt from '@/pages/service-pages/v-terapevt'
-import Urolog from '@/pages/service-pages/v-urolog'
+// Уролог — временно отключено
+// import Urolog from '@/pages/service-pages/v-urolog'
 import Hirurg from '@/pages/service-pages/v-hirurg'
 import Endocrinolog from '@/pages/service-pages/v-endocrinolog'
 import Medcom from '@/pages/service-pages/v-medcom'
@@ -77,11 +81,12 @@ const router = createRouter ({
             component: Discount,
             name: 'Discount'
         },
-        {
-            path: '/service-page/gastr',
-            component: Gastr,
-            name: 'Gastr'
-        },
+        // Гастроэнтеролог — временно отключено
+        // {
+        //     path: '/service-page/gastr',
+        //     component: Gastr,
+        //     name: 'Gastr'
+        // },
         {
             path: '/service-page/ginecolog',
             component: Ginecolog,
@@ -97,31 +102,34 @@ const router = createRouter ({
             component: LOR,
             name: 'LOR'
         },
-        {
-            path: '/service-page/nevrolog',
-            component: Nevrolog,
-            name: 'Nevrolog'
-        },
+        // Невролог — временно отключено
+        // {
+        //     path: '/service-page/nevrolog',
+        //     component: Nevrolog,
+        //     name: 'Nevrolog'
+        // },
         {
             path: '/service-page/onkolog',
             component: Onkolog,
             name: 'Onkolog'
         },
-        {
-            path: '/service-page/oftalmolog',
-            component: Oftalmolog,
-            name: 'Oftalmolog'
-        },
+        // Офтальмолог — временно отключено
+        // {
+        //     path: '/service-page/oftalmolog',
+        //     component: Oftalmolog,
+        //     name: 'Oftalmolog'
+        // },
         {
             path: '/service-page/terapevt',
             component: Terapevt,
             name: 'Terapevt'
         },
-        {
-            path: '/service-page/urolog',
-            component: Urolog,
-            name: 'Urolog'
-        },
+        // Уролог — временно отключено
+        // {
+        //     path: '/service-page/urolog',
+        //     component: Urolog,
+        //     name: 'Urolog'
+        // },
         {
             path: '/service-page/hirurg',
             component: Hirurg,

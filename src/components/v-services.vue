@@ -21,10 +21,11 @@ export default {
   data() {
     return {
         services: [
-            {
-                name: 'Гастроэнтеролог', 
-                route: 'Gastr'
-            },
+            // Гастроэнтеролог — временно отключено
+            // {
+            //     name: 'Гастроэнтеролог', 
+            //     route: 'Gastr'
+            // },
             {
                 name: 'Гинеколог', 
                 route: 'Ginecolog'
@@ -37,26 +38,29 @@ export default {
                 name: 'ЛОР', 
                 route: 'LOR'
             },
-            {
-                name: 'Невролог', 
-                route: 'Nevrolog'
-            },
+            // Невролог — временно отключено
+            // {
+            //     name: 'Невролог', 
+            //     route: 'Nevrolog'
+            // },
             {
                 name: 'Онколог', 
                 route: 'Onkolog'
             },
-            {
-                name: 'Офтальмолог', 
-                route: 'Oftalmolog'
-            },
+            // Офтальмолог — временно отключено
+            // {
+            //     name: 'Офтальмолог', 
+            //     route: 'Oftalmolog'
+            // },
             {
                 name: 'Терапевт', 
                 route: 'Terapevt'
             },
-            {
-                name: 'Уролог',
-                route: 'Urolog'
-            },
+            // Уролог — временно отключено
+            // {
+            //     name: 'Уролог',
+            //     route: 'Urolog'
+            // },
             {
                 name: 'Хирург', 
                 route: 'Hirurg'
