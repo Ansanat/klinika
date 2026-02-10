@@ -1556,6 +1556,76 @@ export default {
                   ]       
                 }
               ]
+            },
+            {
+              name: 'Анализы для гинеколога (мазки, ПЦР, посевы, комплексы)',
+              analysis_groups: [
+                {
+                  name: 'Мазки и цитология',
+                  size: 'price-row',
+                  analysis: [
+                    { name: 'Мазок на флору', price: '200 руб' },
+                    { name: 'Мазок на онкоцитологию', price: '350 руб' },
+                    { name: 'Отделяемое из молочной железы', price: '500 руб' },
+                    { name: 'Исследование мазков методом жидкостной цитологии (соскоб эпителия цервикального канала, эпителия шейки матки)', price: '1 200 руб' },
+                    { name: 'Гистологическое исследование', price: '1 600 руб' },
+                  ]
+                },
+                {
+                  name: 'ПЦР (инфекции)',
+                  size: 'price-row lor-analysis',
+                  analysis: [
+                    { name: 'Chlamydia trachomatis', price: '280 руб' },
+                    { name: 'Neisseria gonorrhoeae', price: '280 руб' },
+                    { name: 'Mycoplasma hominis', price: '280 руб' },
+                    { name: 'Mycoplasma genitalium', price: '280 руб' },
+                    { name: 'Ureaplasma urealyticum', price: '280 руб' },
+                    { name: 'Ureaplasma parvum', price: '250 руб' },
+                    { name: 'Ur.urealyticum+parvum', price: '450 руб' },
+                    { name: 'HPV высокоонкогенные (без генотипирования)', price: '350 руб' },
+                    { name: 'HPV высокоонкогенные (генотипирование)', price: '1 000 руб' },
+                    { name: 'HPV 16', price: '300 руб' },
+                    { name: 'HPV 18', price: '300 руб' },
+                    { name: 'HPV 16;18', price: '350 руб' },
+                    { name: 'HPV 6;11;44', price: '300 руб' },
+                    { name: 'HPV 31; 33; 45', price: '300 руб' },
+                    { name: 'Herpes simplex virus I', price: '280 руб' },
+                    { name: 'Herpes simplex virus II', price: '280 руб' },
+                    { name: 'Herpes simplex virus I+II', price: '500 руб' },
+                    { name: 'Candida albicans', price: '280 руб' },
+                    { name: 'Cytomegalovirus', price: '280 руб' },
+                    { name: 'Trichomonas vaginalis', price: '280 руб' },
+                    { name: 'Gardnerella vaginalis', price: '280 руб' },
+                  ]
+                },
+                {
+                  name: 'Посевы',
+                  size: 'price-row lor-analysis',
+                  analysis: [
+                    { name: 'Б/п "С" м/ф', price: '470 руб' },
+                    { name: 'Посев на Candida', price: '430 руб' },
+                    { name: 'Посев на U. urealyticum с определением титра (количественно)', price: '400 руб' },
+                    { name: 'Посев на M.hominis с определением титра (количественно)', price: '400 руб' },
+                    { name: 'Посев на Neisseria gonorrhoeae (качественно)', price: '400 руб' },
+                    { name: 'Посев на Gardnerella vaginalis (качественно)', price: '450 руб' },
+                    { name: 'Посев на Trichomonas vaginalis (качественно)', price: '450 руб' },
+                  ]
+                },
+                {
+                  name: 'Комплексные исследования',
+                  size: 'price-row lor-analysis',
+                  analysis: [
+                    { name: 'Фемофлор 8 показателей', price: '2 000 руб' },
+                    { name: 'Фемофлор 12 показателей', price: '2 100 руб' },
+                    { name: 'Фемофлор 16 показателей', price: '2 500 руб' },
+                    { name: 'БАКСКРИН для женщин (комплекс): Посев на Candida spp. и чувствительность к антимикотическим препаратам; Посев на U. urealyticum с определением титра (количественно); Посев на M.hominis с определением титра (количественно); Посев на M.genitalium с определением титра (количественно); Посев на Gardnerella vaginalis (качественно); Посев на Trichomonas vaginalis (качественно); Посев на микрофлору и определение чувствительности к антибиотикам отделяемого урогенитального тракта (цервикальный канал)', price: '2 600 руб' },
+                    { name: 'ФЕМИНА (14): Chlamydia trachomatis; Mycoplasma hominis; Candida albicans; Ur.urealyticum; Ur.parvum; Neisseria gonorrhoeae; Trichomonas vaginalis; Mycoplasma genitalium; Gardnerella vaginalis; Lactobacillus spp.; Atopobium vaginae; Mobiluncus curtisii; Prevotella spp.; HPV высокоонкогенные ("13")', price: '3 000 руб' },
+                    { name: 'ИППП СКРИН (10): Chlamydia trachomatis; Mycoplasma hominis; Candida albicans; Ur.urealyticum; Ur.parvum; Neisseria gonorrhoeae; Trichomonas Vaginalis; Mycoplasma genitalium; HPV16;18; Gardnerella vaginalis', price: '2 000 руб' },
+                    { name: 'ИППП РИСК (8): Chlamydia trachomatis; Neisseria gonorrhoeae; Trichomonas vaginalis; Mycoplasma genitalium; HSV I; HSV II; Gardnerella vaginalis; Treponema pallidum', price: '1 500 руб' },
+                    { name: 'ИППП Стандарт (13): Chlamydia trachomatis; Mycoplasma hominis; Candida albicans; Ur.urealyticum; Ur.parvum; Neisseria gonorrhoeae; Trichomonas vaginalis; Mycoplasma genitalium; Gardnerella vaginalis; Atopobium vaginae; CMV; HSV I; II; HPV16;18', price: '3 000 руб' },
+                  ]
+                },
+              ]
             }
           ]
         }
