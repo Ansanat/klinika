@@ -35,6 +35,7 @@ import Diagnostika from '@/pages/service-pages/v-diagnostika'
 import Stomatolog from '@/pages/service-pages/v-stomatolog'
 import StomatologOrtoped from '@/pages/service-pages/v-stomatolog-ortoped'
 import Mammolog from '@/pages/service-pages/v-mammolog'
+import DoabortConsulting from '@/pages/service-pages/v-doabort-consulting'
 import Neirohirurg from '@/pages/service-pages/v-neirohirurg'
 import Sshirurg from '@/pages/service-pages/v-sshirurg'
 
@@ -214,6 +215,11 @@ const router = createRouter ({
             path: '/service-page/stomatolog-ortoped',
             component: StomatologOrtoped,
             name: 'StomatologOrtoped'
+        },
+        {
+            path: '/service-page/doabort-consulting',
+            component: DoabortConsulting,
+            name: 'DoabortConsulting'
         }
     ],
     history: createWebHistory()

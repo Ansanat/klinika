@@ -97,6 +97,10 @@ export default {
                 name: 'Функциональная диагностика',
                 route: 'Diagnostika'
             },
+            {
+                name: 'Доабортное консультирование',
+                route: 'DoabortConsulting'
+            },
             // {
             //     name: 'Фитотерапевт',
             //     route: 'Fitoterapevt'

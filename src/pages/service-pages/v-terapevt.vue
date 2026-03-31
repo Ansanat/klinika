@@ -48,11 +48,11 @@ export default {
             terapevt_services: [
                 {
                     name: 'Первичный прием',
-                    price: '2 200 руб'
+                    price: '2 700 руб'
                 },
                 {
                     name: 'Повторный прием',
-                    price: '2 000 руб'
+                    price: '2 500 руб'
                 },
                 {
                     name: 'Оформление больничного листа',

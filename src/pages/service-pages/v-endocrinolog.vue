@@ -49,11 +49,11 @@ export default {
             onkolog_services: [
                 {
                     name: 'Первичный прием',
-                    price: '2 200 руб'
+                    price: '3 200 руб'
                 },
                 {
                     name: 'Повторный прием',
-                    price: '2 000 руб'
+                    price: '3 000 руб'
                 },
             ],
         }

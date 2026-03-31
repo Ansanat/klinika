@@ -1606,6 +1606,7 @@ export default {
                     { name: 'Посев на Candida', price: '430 руб' },
                     { name: 'Посев на U. urealyticum с определением титра (количественно)', price: '400 руб' },
                     { name: 'Посев на M.hominis с определением титра (количественно)', price: '400 руб' },
+                    { name: 'Посев на M.genitalium с определением титра (количественно)', price: '400 руб' },
                     { name: 'Посев на Neisseria gonorrhoeae (качественно)', price: '400 руб' },
                     { name: 'Посев на Gardnerella vaginalis (качественно)', price: '450 руб' },
                     { name: 'Посев на Trichomonas vaginalis (качественно)', price: '450 руб' },
@@ -1623,6 +1624,7 @@ export default {
                     { name: 'ИППП СКРИН (10): Chlamydia trachomatis; Mycoplasma hominis; Candida albicans; Ur.urealyticum; Ur.parvum; Neisseria gonorrhoeae; Trichomonas Vaginalis; Mycoplasma genitalium; HPV16;18; Gardnerella vaginalis', price: '2 000 руб' },
                     { name: 'ИППП РИСК (8): Chlamydia trachomatis; Neisseria gonorrhoeae; Trichomonas vaginalis; Mycoplasma genitalium; HSV I; HSV II; Gardnerella vaginalis; Treponema pallidum', price: '1 500 руб' },
                     { name: 'ИППП Стандарт (13): Chlamydia trachomatis; Mycoplasma hominis; Candida albicans; Ur.urealyticum; Ur.parvum; Neisseria gonorrhoeae; Trichomonas vaginalis; Mycoplasma genitalium; Gardnerella vaginalis; Atopobium vaginae; CMV; HSV I; II; HPV16;18', price: '3 000 руб' },
+                    { name: 'Комплекс анализов для фарм аборта', price: '1 350 руб' },
                   ]
                 },
               ]
